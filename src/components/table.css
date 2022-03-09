@@ -1,0 +1,36 @@
+
+.hide{
+
+      display: none !important;
+      color:white;
+      background-color: black;
+      font-weight: bold;
+      font-size: 30px;
+      margin-top:40px;
+      position: absolute;
+    
+}
+
+.roww:hover .hide{
+      display: block !important;
+      color:white;
+}
+
+.table-container{
+
+      width: 900px !important;
+      position: relative;
+      overflow: scroll;
+}
+
+
+@media (max-width:678px){
+
+      .table-container{
+            width: 500px !important;
+      }
+}
+
+
+
+ 
