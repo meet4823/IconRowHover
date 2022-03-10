@@ -11,8 +11,7 @@ import {
     TableHead,
     TableRow,
     Paper,
-    Avatar,
-    Grid,
+
     Typography,
     TablePagination,
     TableFooter
@@ -125,20 +124,18 @@ function MTable() {
           {USERS.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((row) => (
             <TableRow key={row.name} className='roww'>
               <TableCell>
-                  <Grid container>
-                      <Grid item lg={2}>
-                          <Avatar alt={row.name} src='.' className={classes.avatar}/>
-                      </Grid>
-                      <Grid item lg={10}>
+               
+                      
+                    
                           <Typography className={classes.name}>{row.name}</Typography>
                           <Typography color="textSecondary" variant="body2">{row.email}</Typography>
                           <Typography color="textSecondary" variant="body2">{row.phone}</Typography>
-                      </Grid>
-                  </Grid>
+                
+                 
                 </TableCell>
               <TableCell>
                   <Typography color="primary" variant="subtitle2">{row.jobTitle}</Typography>
-                  <Typography color="textSecondary" variant="body2">{row.company}</Typography>
+                  
                 </TableCell>
               <TableCell>{row.joinDate}</TableCell>
               <TableCell>
@@ -157,20 +154,18 @@ function MTable() {
 
 
                 <TableCell>
-                  <Grid container>
-                      <Grid item lg={2}>
-                          <Avatar alt={row.name} src='.' className={classes.avatar}/>
-                      </Grid>
-                      <Grid item lg={10}>
+               
+                      
+                    
                           <Typography className={classes.name}>{row.name}</Typography>
                           <Typography color="textSecondary" variant="body2">{row.email}</Typography>
                           <Typography color="textSecondary" variant="body2">{row.phone}</Typography>
-                      </Grid>
-                  </Grid>
+                
+                 
                 </TableCell>
               <TableCell>
                   <Typography color="primary" variant="subtitle2">{row.jobTitle}</Typography>
-                  <Typography color="textSecondary" variant="body2">{row.company}</Typography>
+                 
                 </TableCell>
               <TableCell>{row.joinDate}</TableCell>
               <TableCell>
